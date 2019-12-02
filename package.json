@@ -1,0 +1,11 @@
+{
+  "name": "j_ci",
+  "version": "1.0.0",
+  "description": "javascript ci/cd automation",
+  "main": "index.js",
+  "scripts": {
+    "build": "cp -a src/. build/"
+  },
+  "author": "jeantoledo",
+  "license": "MIT"
+}
