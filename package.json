@@ -4,7 +4,7 @@
   "description": "javascript ci/cd automation",
   "main": "index.js",
   "scripts": {
-    "build": "cross-var cp -a src/. build/$npm_package_version/"
+    "build": "cross-var cp -a src/. build/$npm_package_version"
   },
   "author": "jeantoledo",
   "license": "MIT",
