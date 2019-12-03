@@ -7,6 +7,9 @@ jobs:
     steps:
       - checkout
       - run:
+          name: Print PR
+          command: echo ${CIRCLE_PULL_REQUESTS}
+      - run:
           name: Install dependencies
           command: npm install
       - run:
