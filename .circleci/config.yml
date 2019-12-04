@@ -25,7 +25,8 @@ jobs:
             - "02:c6:b6:4c:66:bc:a4:4d:8c:d7:de:58:12:e1:37:34"
       - run:
           name: Push release to github
-          command: git push --follow-tags origin master
+          command: git push -q https://${DOCS_GITHUB_TOKEN}@github.com/jeantoledo/j_ci.git master
+          
       - run:
           name: Install Python
           command: sudo apt-get install python3 python-pip python-dev
