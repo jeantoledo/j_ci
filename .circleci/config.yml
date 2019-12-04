@@ -10,8 +10,14 @@ jobs:
           name: Install dependencies
           command: npm install
       - run:
+          name: Generate release
+          command: npm run release
+      - run:
           name: Build
           command: npm run build
+      - run:
+          name: Push release to github
+          command: git push --follow-tags origin master
       - run:
           name: Install Python
           command: sudo apt-get install python3 python-pip python-dev
@@ -25,4 +31,7 @@ workflows:
   version: 2
   build-and-deploy:
     jobs:
-      - build
+      - build:
+          filters:
+            branches:
+              only: master
