@@ -7,16 +7,13 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Configure Github
-          commands:
-            - git config --global user.email circleci@circleci.com
-            - git config --global user.name CircleCI
-      - run:
           name: Print PR
           command: echo ${CIRCLE_PULL_REQUESTS}
       - run:
           name: Install dependencies
           command: npm install
+      - run: git config --global user.email circleci@circleci.com
+      - run: git config --global user.name CircleCI
       - run:
           name: Generate release
           command: npm run release
