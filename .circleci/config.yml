@@ -22,7 +22,7 @@ jobs:
           command: npm run build
       - add_ssh_keys:
           fingerprints:
-            - "b7:35:a6:4e:9b:0d:6d:d4:78:1e:9a:97:2a:66:6b:be"
+            - "02:c6:b6:4c:66:bc:a4:4d:8c:d7:de:58:12:e1:37:34"
       - run:
           name: Push release to github
           command: git push --follow-tags origin master
