@@ -2,7 +2,7 @@
   "name": "j_ci",
   "version": "1.0.2",
   "description": "javascript ci/cd automation",
-  "main": "index3.js",
+  "main": "index4.js",
   "scripts": {
     "release": "standard-version",
     "prebuild": "cross-var mkdir -p build/$npm_package_version/",
