@@ -19,9 +19,7 @@ jobs:
           command: npm run release
       - run:
           name: Skip CI Build
-          command: |
-            OLD_MSG=$(git log --format=%B -n1)
-            git commit --amend -m"$OLD_MSG" -m"[ci skip]"
+          command: git commit --allow-empty -m "[ci skip]"
       - run:
           name: Build
           command: npm run build
