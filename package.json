@@ -9,7 +9,6 @@
     }
   },
   "scripts": {
-    "commit": "git-cz",
     "release": "standard-version",
     "prebuild": "cross-var mkdir -p build/$npm_package_version/",
     "build": "cross-var cp -a src/. build/$npm_package_version/"
