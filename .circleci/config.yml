@@ -38,7 +38,7 @@ jobs:
           command: sudo pip install awscli
       - run:
           name: Deploy to S3
-          command: aws s3 sync build s3://jcti --acl public-read
+          command: aws s3 sync build s3://jcti --acl public-read --delete
 workflows:
   version: 2
   build-and-deploy:
