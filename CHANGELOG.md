@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://github.com/jeantoledo/j_ci/compare/v1.0.6...v2.0.0) (2019-12-09)
+
+
+### ⚠ BREAKING CHANGES
+
+* test
+
+### Features
+
+* test ([beaf6c0](https://github.com/jeantoledo/j_ci/commit/beaf6c063974d2fc16e841ca6a868d3e99ec0474))
+
 ### [1.0.6](https://github.com/jeantoledo/j_ci/compare/v1.0.5...v1.0.6) (2019-12-09)
 
 
