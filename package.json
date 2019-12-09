@@ -2,7 +2,7 @@
   "name": "j_ci",
   "version": "1.0.5",
   "description": "javascript ci/cd automation",
-  "main": "index4.js",
+  "main": "index5.js",
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
