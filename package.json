@@ -3,7 +3,13 @@
   "version": "1.0.5",
   "description": "javascript ci/cd automation",
   "main": "index4.js",
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
   "scripts": {
+    "commit": "git-cz",
     "release": "standard-version",
     "prebuild": "cross-var mkdir -p build/$npm_package_version/",
     "build": "cross-var cp -a src/. build/$npm_package_version/"
@@ -11,7 +17,10 @@
   "author": "jeantoledo",
   "license": "MIT",
   "devDependencies": {
+    "@commitlint/cli": "^8.2.0",
+    "@commitlint/config-conventional": "^8.2.0",
     "cross-var": "^1.1.0",
+    "husky": "^3.1.0",
     "standard-version": "^7.0.1"
   }
 }
