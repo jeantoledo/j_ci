@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.0.1](https://github.com/jeantoledo/j_ci/compare/v2.0.0...v2.0.1) (2019-12-09)
+
+
+### Bug Fixes
+
+* testing s3 ([61c8b74](https://github.com/jeantoledo/j_ci/commit/61c8b749ce0c33aaef2ccd273ff6628493e2c442))
+
 ## [2.0.0](https://github.com/jeantoledo/j_ci/compare/v1.0.6...v2.0.0) (2019-12-09)
 
 
