@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.0.6](https://github.com/jeantoledo/j_ci/compare/v2.0.5...v2.0.6) (2019-12-09)
+
+
+### Bug Fixes
+
+* remove unecessary package.json script ([e6447c0](https://github.com/jeantoledo/j_ci/commit/e6447c0280ebf30556c6a8bcc0b731b2ea75ec3b))
+
 ### [2.0.5](https://github.com/jeantoledo/j_ci/compare/v2.0.4...v2.0.5) (2019-12-09)
 
 
