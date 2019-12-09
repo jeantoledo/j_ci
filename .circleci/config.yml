@@ -37,7 +37,7 @@ jobs:
           command: sudo pip install awscli
       - run:
           name: Clear latest folder
-          command: aws s3 rm s3://jcti/latest
+          command: aws s3 rm s3://jcti/latest/
       - run:
           name: Deploy to S3
           command: aws s3 sync build s3://jcti --acl public-read
