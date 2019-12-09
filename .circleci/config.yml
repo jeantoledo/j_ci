@@ -29,7 +29,6 @@ jobs:
       - run:
           name: Push release to github
           command: git push --follow-tags origin master
-          
       - run:
           name: Install Python
           command: sudo apt-get install python3 python-pip python-dev
@@ -37,8 +36,11 @@ jobs:
           name: Install awscli
           command: sudo pip install awscli
       - run:
+          name: Clear latest folder
+          command: aws s3 rm s3://jcti/latest
+      - run:
           name: Deploy to S3
-          command: aws s3 sync build s3://jcti --acl public-read --delete
+          command: aws s3 sync build s3://jcti --acl public-read
 workflows:
   version: 2
   build-and-deploy:
