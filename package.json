@@ -1,6 +1,6 @@
 {
   "name": "j_ci",
-  "version": "1.0.6",
+  "version": "2.0.0",
   "description": "javascript ci/cd automation",
   "main": "index6.js",
   "husky": {
