@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.0.3](https://github.com/jeantoledo/j_ci/compare/v2.0.2...v2.0.3) (2019-12-09)
+
+
+### Bug Fixes
+
+* delete old lib s3 folders 2 ([e547a75](https://github.com/jeantoledo/j_ci/commit/e547a7518d780d488586bd0b10936ef67c882add))
+
 ### [2.0.2](https://github.com/jeantoledo/j_ci/compare/v2.0.1...v2.0.2) (2019-12-09)
 
 
