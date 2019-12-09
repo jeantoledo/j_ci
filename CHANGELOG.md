@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.0.4](https://github.com/jeantoledo/j_ci/compare/v2.0.3...v2.0.4) (2019-12-09)
+
+
+### Bug Fixes
+
+* clearing s3 latest folder before deploy ([1cd9d29](https://github.com/jeantoledo/j_ci/commit/1cd9d2984c0732192d7d7707c4cfc7b9077d6d2b))
+
 ### [2.0.3](https://github.com/jeantoledo/j_ci/compare/v2.0.2...v2.0.3) (2019-12-09)
 
 
