@@ -7,16 +7,13 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Print PR
-          command: echo ${CIRCLE_PULL_REQUESTS}
-      - run:
           name: Install dependencies
           command: npm install
       - run: git config --global user.email circleci@circleci.com
       - run: git config --global user.name CircleCI
       - run:
           name: Generate release
-          command: npm run release
+          command: standard-version
       - run:
           name: Skip CI Build
           command: git commit --allow-empty -m "[ci skip]"
