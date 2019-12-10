@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.0.7](https://github.com/jeantoledo/j_ci/compare/v2.0.6...v2.0.7) (2019-12-09)
+
+
+### Bug Fixes
+
+* generate latest folder ([b4d4ea0](https://github.com/jeantoledo/j_ci/commit/b4d4ea05c32493377c0f4524520a39119be16266))
+
 ### [2.0.6](https://github.com/jeantoledo/j_ci/compare/v2.0.5...v2.0.6) (2019-12-09)
 
 
