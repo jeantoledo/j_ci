@@ -13,7 +13,7 @@ jobs:
       - run: git config --global user.name CircleCI
       - run:
           name: Generate release
-          command: standard-version
+          command: npm run release
       - run:
           name: Skip CI Build
           command: git commit --allow-empty -m "[ci skip]"
