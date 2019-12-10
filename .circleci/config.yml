@@ -3,6 +3,25 @@ defaults: &defaults
   docker:
     - image: circleci/node:10-browsers
 
+release_commands: &release_commands
+  - add_ssh_keys:
+      fingerprints:
+        - "fc:d5:37:a0:18:70:0c:88:71:87:e7:eb:12:49:65:f9"
+  - run:
+      name: Configure git user
+      command: |
+        git config --global user.email circleci@circleci.com
+        git config --global user.name CircleCI
+  - run:
+      name: Generate lib release
+      command: npm run release
+  - run:
+      name: Skip CI Build for the next push
+      command: git commit --allow-empty -m "[ci skip]"
+  - run:
+      name: Push release to github
+      command: git push --follow-tags origin master
+
 version: 2
 jobs:
   build:
@@ -12,23 +31,7 @@ jobs:
       - run:
           name: Install dependencies
           command: npm install
-      - add_ssh_keys:
-          fingerprints:
-            - "fc:d5:37:a0:18:70:0c:88:71:87:e7:eb:12:49:65:f9"
-      - run:
-          name: Configure git user
-          command: |
-            git config --global user.email circleci@circleci.com
-            git config --global user.name CircleCI
-      - run:
-          name: Generate lib release
-          command: npm run release
-      - run:
-          name: Skip CI Build for the next push
-          command: git commit --allow-empty -m "[ci skip]"
-      - run:
-          name: Push release to github
-          command: git push --follow-tags origin master
+      <<: *release_commands
       - run:
           name: Build lib
           command: npm run build
