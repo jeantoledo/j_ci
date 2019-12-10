@@ -1,9 +1,12 @@
+defaults: &defaults
+  working_directory: ~/j_ci
+  docker:
+    - image: circleci/node:10-browsers
+
 version: 2
 jobs:
   build:
-    working_directory: ~/j_ci
-    docker:
-      - image: circleci/node:10-browsers
+    <<: *defaults
     steps:
       - checkout
       - run:
@@ -26,23 +29,35 @@ jobs:
       - run:
           name: Push release to github
           command: git push --follow-tags origin master
+      - persist_to_workspace:
+          root: ~/j_ci
+          paths:
+            - build
+  deploy:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ~/j_ci
       - run:
           name: Install Python
           command: sudo apt-get install python3 python-pip python-dev
       - run:
-          name: Install awscli
+          name: Install AWS Client
           command: sudo pip install awscli
       - run:
-          name: Clear latest folder
+          name: Clear latest folder on AWS
           command: aws s3 rm s3://jcti/latest/
       - run:
-          name: Deploy to S3
+          name: Deploy to AWS S3
           command: aws s3 sync build s3://jcti --acl public-read
 workflows:
   version: 2
   build-and-deploy:
     jobs:
-      - build:
+      - build
+      - deploy:
+          requires:
+            - build
           filters:
             branches:
               only: master
