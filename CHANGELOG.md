@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.0.11](https://github.com/jeantoledo/j_ci/compare/v2.0.10...v2.0.11) (2019-12-10)
+
+
+### Bug Fixes
+
+* last commit ([6baa812](https://github.com/jeantoledo/j_ci/commit/6baa8128aaff2c7195ab7ade77e3b131a3df25a4))
+* testing variables in config ([b6fa3ea](https://github.com/jeantoledo/j_ci/commit/b6fa3ead2a1c41e8e229d3b44d860a9a37c62cc2))
+
 ### [2.0.10](https://github.com/jeantoledo/j_ci/compare/v2.0.9...v2.0.10) (2019-12-10)
 
 
