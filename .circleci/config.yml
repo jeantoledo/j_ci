@@ -15,7 +15,7 @@ jobs:
       - add_ssh_keys:
           fingerprints:
             - "fc:d5:37:a0:18:70:0c:88:71:87:e7:eb:12:49:65:f9"
-      -run:
+      - run:
           name: Configure git user
           command: |
             git config --global user.email circleci@circleci.com
