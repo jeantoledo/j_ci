@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.0.13](https://github.com/jeantoledo/j_ci/compare/v2.0.12...v2.0.13) (2019-12-17)
+
+
+### Bug Fixes
+
+* apply cloudfront invalidation ([6179737](https://github.com/jeantoledo/j_ci/commit/617973791b9af1049f8ae589f6b96b3541e9f6a2))
+
 ### [2.0.12](https://github.com/jeantoledo/j_ci/compare/v2.0.11...v2.0.12) (2019-12-11)
 
 
